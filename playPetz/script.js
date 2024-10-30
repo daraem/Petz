@@ -283,7 +283,7 @@ function staticAnimation() {
       if(animationLoops == 2) {
         animationLoops = 0;
   
-        stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
+        stickmanSprite.src = "../assets/walkingBoth.svg";
         stickmanSprite.onload = undefined
     
         allowMovement = true
@@ -293,7 +293,7 @@ function staticAnimation() {
       if(animationLoops == 1) {
         animationLoops = 0;
   
-        stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
+        stickmanSprite.src = "../assets/walkingBoth.svg";
         stickmanSprite.onload = undefined
     
         allowMovement = true
@@ -371,7 +371,7 @@ const gameLoop = () => {
       } else if (state >= 5 && state < 9){
         switchAn = false;
       } else if(state == 9) {
-        stickmanSprite.src = "./Petz../assets/iddle.svg"
+        stickmanSprite.src = "../assets/iddle.svg"
         stickmanSprite.onload = undefined
 
         switchAn = true;
@@ -406,7 +406,7 @@ const frameCounting = () => {
 }
 
 let stickmanSprite = new Image();
-stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
+stickmanSprite.src = "../assets/walkingBoth.svg";
 stickmanSprite.onload = () => {
   gameLoop();
   frameCounting();
