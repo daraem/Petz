@@ -114,7 +114,7 @@ const submitRes = () => {
     let colour = petParams[1]
     let classP = classParam[0]
 
-    let params = "https://daraem.github.io/Petz/playPetz/index.html" + "?id=" + btoa([name.value, colour.value, classP.value].join('|'))
+    let params = "./Petz/playPetz/index.html" + "?id=" + btoa([name.value, colour.value, classP.value].join('|'))
     console.log(params)
     document.getElementsByTagName("a")[0].setAttribute("href", params)
     document.getElementsByTagName("a")[0].click()
