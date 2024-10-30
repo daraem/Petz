@@ -102,7 +102,6 @@ const renderBG = () => {
         bgCtx.fillStyle = pattern;
         bgCtx.fillRect(-patternOffsetX, -patternOffsetY, bgCanva.width + bg.width, bgCanva.height + bg.height);
         bgCtx.restore();
-
         requestAnimationFrame(animate);
       }
       animate();
@@ -130,6 +129,5 @@ window.addEventListener("resize", () => {
   renderBG();
   mainRender();
 })
-
 renderBG();
 mainRender();
