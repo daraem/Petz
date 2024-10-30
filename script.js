@@ -38,7 +38,7 @@ const mainRender = () => {
   }
 
   const box = new Image();
-  box.src ="./Petz/assets/boxPNG.png";
+  box.src ="./assets/boxPNG.png";
   box.onload = () => {
     const extraScale = 150;
     ctx.drawImage(box, (canva.width / 2) - ((box.width + extraScale) / 2), (canva.height / 2) - ((box.height + extraScale) / 2), box.width + extraScale, box.height + extraScale); 
@@ -50,7 +50,7 @@ const mainRender = () => {
   ctx.fillRect(canva.width - (canva.width * 0.125), 0, canva.width * 0.125, canva.height)
 
   const img = new Image();
-  img.src = "./Petz/assets/stickmanPTY.svg";
+  img.src = "./assets/stickmanPTY.svg";
   img.onload = () => {
     ctx.drawImage(img, (canva.width / 2) - ((img.width + 150) / 2), (canva.height / 2) - ((img.height + 150) / 2), img.width + 150, img.height + 150); 
   }
@@ -85,7 +85,7 @@ const mainRender = () => {
 
 const renderBG = () => {
     const bg = new Image();
-    bg.src = "./Petz/assets/bg2.svg"
+    bg.src = "./assets/bg2.svg"
     bg.onload = () => {
       var pattern = bgCtx.createPattern(bg, 'repeat');
       var patternOffsetX = 0;
@@ -113,7 +113,7 @@ const submitRes = () => {
     let colour = petParams[1]
     let classP = classParam[0]
 
-    let params = "./Petz/playPetz/index.html" + "?id=" + btoa([name.value, colour.value, classP.value].join('|'))
+    let params = "./playPetz/index.html" + "?id=" + btoa([name.value, colour.value, classP.value].join('|'))
     console.log(params)
     document.getElementsByTagName("a")[0].setAttribute("href", params)
     document.getElementsByTagName("a")[0].click()
