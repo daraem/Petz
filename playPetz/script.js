@@ -166,14 +166,14 @@ function buildButtons() {
     if (x > button2.x && x < button2.x + button2.width && y > button2.y && y < button2.y + button2.height) {
       switch (params[2]) {
         case "basic":
-          stickmanSprite.src = "./Petz/assets/smoking.svg";
+          stickmanSprite.src = "../assets/smoking.svg";
           break;
         case "smoker":
-          stickmanSprite.src = "./Petz/assets/smoking.svg";
+          stickmanSprite.src = "../assets/smoking.svg";
           break;
 
         case "heroe":
-          stickmanSprite.src = "./Petz/assets/ultraPowerAnim.svg";
+          stickmanSprite.src = "../assets/ultraPowerAnim.svg";
           break;
 
       }
@@ -283,7 +283,7 @@ function staticAnimation() {
       if(animationLoops == 2) {
         animationLoops = 0;
   
-        stickmanSprite.src = "./Petz./Petz/assets/walkingBoth.svg";
+        stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
         stickmanSprite.onload = undefined
     
         allowMovement = true
@@ -293,7 +293,7 @@ function staticAnimation() {
       if(animationLoops == 1) {
         animationLoops = 0;
   
-        stickmanSprite.src = "./Petz./Petz/assets/walkingBoth.svg";
+        stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
         stickmanSprite.onload = undefined
     
         allowMovement = true
@@ -371,7 +371,7 @@ const gameLoop = () => {
       } else if (state >= 5 && state < 9){
         switchAn = false;
       } else if(state == 9) {
-        stickmanSprite.src = "./Petz./Petz/assets/iddle.svg"
+        stickmanSprite.src = "./Petz../assets/iddle.svg"
         stickmanSprite.onload = undefined
 
         switchAn = true;
@@ -406,7 +406,7 @@ const frameCounting = () => {
 }
 
 let stickmanSprite = new Image();
-stickmanSprite.src = "./Petz./Petz/assets/walkingBoth.svg";
+stickmanSprite.src = "./Petz../assets/walkingBoth.svg";
 stickmanSprite.onload = () => {
   gameLoop();
   frameCounting();
