@@ -85,7 +85,7 @@ const mainRender = () => {
 
 const renderBG = () => {
     const bg = new Image();
-    bg.src = "https://daraem.github.io/Petz/assets/bg2.svg"
+    bg.src = "./Petz/assets/bg2.svg"
     bg.onload = () => {
       var pattern = bgCtx.createPattern(bg, 'repeat');
       var patternOffsetX = 0;
